@@ -19,10 +19,15 @@ class QuizzFeed extends StatelessWidget {
             if (data != null) {
               //print(data);
               return Column(
-                // Let's take the following line step by step
-                // Data has Post objects, with a text and an id
-                // The following makes a list, with only the text of the Posts. (the Posts that are inside of data)
-                children: data.map((e) => AtomicAnswer(post: e)).toList(),
+                children: [
+                  Column(
+                    // Let's take the following line step by step
+                    // Data has Post objects, with a text and an id
+                    // The following makes a list, with only the text of the Posts. (the Posts that are inside of data)
+                    children: data.map((e) => AtomicAnswer(post: e)).toList(),
+                  ),
+                  CircularProgressIndicator(),
+                ],
               );
             }
             return Text('Unexpected Error!');

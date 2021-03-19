@@ -64,8 +64,10 @@ class MockPostRepository implements PostRepository {
     var posts = <
         Post>[]; // Creates a dictionary that has to be filled with Posts (described by the class Post)
     // Every 3 seconds, adds a Post to the list 'posts' with an id of current list length and a random text. Every time it loops, it returns the new post.
+    var time = 10;
     while (true) {
-      await Future.delayed(Duration(seconds: 3));
+      time *= 2;
+      await Future.delayed(Duration(milliseconds: time));
       posts.add(Post(posts.length, randomText()));
       yield posts;
     }
