@@ -11,7 +11,7 @@ class KeyPage extends StatelessWidget {
               TextField(
                   decoration:
                       InputDecoration(labelText: 'Enter exclusive secret key')),
-              RaisedButton(
+              ElevatedButton(
                 child: Text(
                   "Access Oxygen Alpha",
                   style: TextStyle(fontSize: 20),
