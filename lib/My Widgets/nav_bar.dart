@@ -12,12 +12,20 @@ class NavBar extends StatelessWidget {
           label: 'Home',
         ),
         BottomNavigationBarItem(
+          icon: Icon(Icons.search),
+          label: 'Search',
+        ),
+        BottomNavigationBarItem(
           icon: Icon(Icons.add),
           label: 'Publish',
         ),
         BottomNavigationBarItem(
+          icon: Icon(Icons.vpn_key),
+          label: 'Access Keys',
+        ),
+        BottomNavigationBarItem(
           icon: Icon(Icons.person),
-          label: 'Person',
+          label: 'Me',
         ),
       ],
     );

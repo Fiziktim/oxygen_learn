@@ -14,7 +14,19 @@ class AtomicAnswer extends StatelessWidget {
     return Container(
       child: Column(
         children: [
-          Text(post.text),
+          Container(
+              child: Text(post.text),
+              padding: EdgeInsets.all(20.0),
+              //margin: EdgeInsets.all(20.0),
+              width: 600, // This is actually the max width
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                color: Colors.grey[800],
+              )),
+          TextField(),
+          TextField(),
+          ElevatedButton(
+              child: Text('Publish'), onPressed: () => print('Publish')),
         ],
       ),
       padding: EdgeInsets.all(20.0),
@@ -22,8 +34,9 @@ class AtomicAnswer extends StatelessWidget {
       width: 600, // This is actually the max width
       decoration: BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(10.0)),
-        color: Colors.grey[800],
+        color: Colors.red[900],
         boxShadow: [
+          // WARNING :: SHOULD USE BOX SHADOW FROM DESIGN CONSTS
           BoxShadow(
             blurRadius: 5,
             color: Colors.black.withOpacity(0.2),
