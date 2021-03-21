@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class KeyPage extends StatelessWidget {
+class EmailVerificationPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -8,15 +8,17 @@ class KeyPage extends StatelessWidget {
         child: Container(
           child: Column(
             children: [
+              Text(
+                  "Last step : We have sent you a security code by email, enter it, and you're in 👌"),
               TextField(
                   decoration:
-                      InputDecoration(labelText: 'Enter exclusive secret key')),
+                      InputDecoration(labelText: 'Email security code : ')),
               ElevatedButton(
                 child: Text(
-                  "Access Oxygen Alpha",
+                  "Get in.",
                   style: TextStyle(fontSize: 20),
                 ),
-                onPressed: null,
+                onPressed: () => print('Get in button pressed'),
               ),
             ],
           ),

@@ -7,6 +7,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'Pages/home.dart';
 import 'Pages/publish.dart';
 import 'Pages/account.dart';
+import 'Pages/Boarding/key.dart';
+import 'Pages/Boarding/create_account.dart';
+import 'Pages/Boarding/email_verification.dart';
 
 // To use providers, you have to wrap your entire app with a widget called ProviderScope
 void main() {
@@ -21,8 +24,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark(),
       //home: KeyPage(),
       //home: PublishPage(),
-      home: AccountPage(),
-      //home: HomePage(),
+      //home: AccountPage(),
+      home: HomePage(),
+      //home: EmailVerificationPage(),
     );
   }
 }

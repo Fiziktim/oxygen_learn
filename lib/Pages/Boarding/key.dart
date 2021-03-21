@@ -16,7 +16,8 @@ class KeyPage extends StatelessWidget {
                   "Access Oxygen Alpha",
                   style: TextStyle(fontSize: 20),
                 ),
-                onPressed: null,
+                onPressed: () => print(
+                    'Key Page : Access Oxygen learn Alpha button pressed'),
               ),
             ],
           ),
