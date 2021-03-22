@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:oxygen_learn/Semi-backend/post_repository.dart';
 import 'package:oxygen_learn/My Widgets/atomic_answer.dart';
+import 'package:oxygen_learn/My Widgets/atomic_question.dart';
 
 class QuizzFeed extends StatelessWidget {
   @override
